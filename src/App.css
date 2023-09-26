@@ -30,7 +30,7 @@
   background: var(--bg-color-primary);
 }
 .header {
-  height: 100dvh;
+  height: 65dvh;
   width: 100%;
   background: var(--ui-color-secondary);
   display: flex;
@@ -266,4 +266,104 @@
   transform: scale(110%);
   border-width: .5vmin;
   transition: 0.05s;
+}
+#section03 {
+  padding-bottom: 5vmin;
+  padding-top: 5vmin;
+}
+#section03 h1 {
+  color: var(--heading-color-1);
+  font-size: 7vmin;
+  margin: 0;
+  padding: 0;
+}
+.downloads-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+}
+.download {
+  background: var(--ui-color-tertiary);
+  height: 35vmin;
+  width: 25vmin;
+  border-radius: var(--global-border-radius);
+  border: .5vmin solid var(--active);
+  font-size: 3vmin;
+  position: relative;
+  filter: drop-shadow(0 0 1vmin var(--active));
+  margin-right: 1vmin;
+}
+.DownloadTextWrapper {
+  position: absolute;
+  bottom: 1vmin;
+  left: 1vmin;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: calc(100% - 2vmin);
+}
+.DownloadTextWrapper h2 {
+  font-size: 3vmin;
+  color: var(--heading-color-1);
+  margin: 0;
+  padding: 0;
+}
+.DownloadTextWrapper h3 {
+  font-size: 2vmin;
+  color: var(--paragraph-color-1);
+  margin: 0;
+  padding: 0;
+}
+.DownloadTextWrapper button {
+  height: 5vmin;
+  width: 100%;
+  border: 0 solid var(--active);
+  outline: none;
+  border-radius: var(--global-border-radius);
+  background: var(--ui-color-primary);
+  color: var(--heading-color-1);
+  font-family: 'Jetbrains Mono', sans-serif;
+  border: 0vmin solid var(--active);
+  font-size: 2vmin;
+  padding: 1vmin;
+  cursor: pointer;
+  transition: 0.35s;
+  box-sizing: border-box;
+}
+.DownloadTextWrapper button:hover {
+  background: var(--active);
+  filter: drop-shadow(0 0 1vmin var(--active));
+  transform: scale(103.5%);
+}
+.DownloadTextWrapper button:active {
+  background: var(--ui-color-primary);
+  filter: drop-shadow(0 0 1vmin var(--active));
+  transform: scale(103.5%);
+  border-width: .5vmin;
+  transition: 0.05s;
+}
+.osImage {
+  width: calc(100% - 2vmin);
+  max-height: 57.5%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 1vmin;
+  left: 1vmin;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  /* background: #fff; */
+}
+.windows {
+  background-image: url('os/windows.png');
+}
+.github {
+  background-image: url('os/github.png');
 }

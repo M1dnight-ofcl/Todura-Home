@@ -31,10 +31,10 @@ const App = () => {
             <h1>Unparalleled Customization</h1>
             <p> Tailor Todura to your unique workflow. With a myriad of customization options, you can mold the app to fit your specific needs and preferences.</p>
           </div>
-          <div className="feature">
+          {/* <div className="feature">
             <h1>Unparalleled Customization</h1>
             <p> Tailor Todura to your unique workflow. With a myriad of customization options, you can mold the app to fit your specific needs and preferences.</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -50,6 +50,31 @@ const App = () => {
           </p>
         </div>
         <div className="uiExample"></div>
+      </section>
+
+      <section className="pageSection" id="section03">
+        <h1>Downloads</h1>
+        <div className='downloads-container'>
+
+          <div className='download'>
+            <div className="osImage windows"></div>
+            <div class="DownloadTextWrapper">
+              <h3>Download for </h3>
+              <h2>Windows</h2>
+              <a href="https://github.com/M1dnight-ofcl/Todura/releases/download/beta-release/latest-release.zip"><button>Download</button></a>
+            </div>
+          </div>
+
+          <div className='download'>
+            <div className="osImage github"></div>
+            <div class="DownloadTextWrapper">
+              <h3>View Source Code on </h3>
+              <h2>GitHub</h2>
+              <a href="https://github.com/M1dnight-ofcl/Todura/releases/download/beta-release/latest-release.zip"><button>Download</button></a>
+            </div>
+          </div>
+
+        </div>
       </section>
 
     </div>
